@@ -6,7 +6,7 @@ WORKDIR /app/
 
 # Install packages required
 ENV PYPICLOUD_VERSION 1.0.13
-RUN apk add --no-cache --virtual build-deps python3-dev build-base linux-headers && \
+RUN apk add --no-cache --virtual build-deps python3-dev build-base linux-headers openssl-dev && \
   apk add --no-cache util-linux-dev libffi-dev && \
   pip install pypicloud==$PYPICLOUD_VERSION requests uwsgi pastescript && \
   adduser -D -s /bin/sh -h /var/lib/pypicloud/ pypicloud && \

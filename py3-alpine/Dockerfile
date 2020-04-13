@@ -1,4 +1,4 @@
-FROM python:3.6-alpine3.7
+FROM python:3.7-alpine
 MAINTAINER Steven Arcangeli <stevearc@stevearc.com>
 
 EXPOSE 8080
